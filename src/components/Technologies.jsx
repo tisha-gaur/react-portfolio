@@ -6,6 +6,8 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiRedux } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import {motion} from 'framer-motion'
+import { SiMysql } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 
 const iconVariants = (duration) => ({
     initial: {y:-10},
@@ -27,7 +29,7 @@ const Technologies = () => {
         whileInView={{opacity:1, x:0}}
         initial={{opacity:0, x:-100}}
         transition={{duration:1.5}}
-        className="flex flex-wrap items-center w-6/12 justify-center gap-4 mx-auto">
+        className="flex flex-wrap items-center md:w-6/12 justify-center gap-4 mx-auto">
             <motion.div
             variants={iconVariants(2.5)}
             initial="initial"
@@ -35,7 +37,21 @@ const Technologies = () => {
             className="rounded-2xl border-4 border-neutral-800 p-4">
                 <RiReactjsLine className="text-6xl text-cyan-400" />
             </motion.div>
-
+            <motion.div 
+            variants={iconVariants(2)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <AiOutlineJavaScript className="text-6xl text-yellow-400" />
+            </motion.div>
+            
+            <motion.div 
+            variants={iconVariants(8)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <RiTailwindCssFill className="text-6xl text-cyan-400" />
+            </motion.div>
             <motion.div 
             variants={iconVariants(3)}
             initial="initial"
@@ -44,29 +60,12 @@ const Technologies = () => {
                 <FaNodeJs className="text-6xl text-green-500" />
             </motion.div>
 
-
-            <motion.div 
-            variants={iconVariants(8)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-                <RiTailwindCssFill className="text-6xl text-cyan-400" />
-            </motion.div>
-
-            <motion.div 
-            variants={iconVariants(2)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-                <AiOutlineJavaScript className="text-6xl text-yellow-400" />
-            </motion.div>
-
             <motion.div 
             variants={iconVariants(6)}
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiMongodb className="text-6xl text-green-500" />
+                <SiMysql className="text-6xl text-blue-500" />
             </motion.div>
 
             <motion.div 
@@ -82,7 +81,7 @@ const Technologies = () => {
             initial="initial"
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiRedux className="text-6xl text-purple-400" />
+                <SiTypescript  className="text-6xl text-blue-500" />
             </motion.div>
 
             

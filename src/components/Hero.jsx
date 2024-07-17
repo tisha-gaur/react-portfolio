@@ -12,9 +12,9 @@ const container = (delay) => ({
 })
 
 const Hero = () => {
-    return <div className=" pb-4 lg:mb-35">
+    return <div className="pb-4 lg:mb-35">
         <div className="flex flex-wrap ">
-            <div className="w-full pl-20 lg:w-1/2">
+            <div className="w-full p-4 md:pl-20 lg:w-1/2">
                 <div className="flex flex-col itema-center lg:items-start">
                     <motion.h1
                         variants={container(0)}
@@ -30,9 +30,9 @@ const Hero = () => {
                         initial="hidden"
                         animate="visible"
                         className="pb-10 bg-gradient-to-r from-pink-300 via-slate-200 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">Full Stack Developer</motion.span>
-                    <a href="https://example.com" className="w-1/2">
+                    <a href="resumelink" className="w-1/2">
                       <motion.button initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }}
-                        type="button" className="text-black w-1/2 font-semibold bg-gradient-to-r from-pink-300 via-slate-00 to-purple-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                        type="button" className="text-black font-bold w-5/6 bg-gradient-to-r from-pink-300 via-slate-00 to-purple-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800  rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                         Resume
                       </motion.button>
                     </a>
@@ -40,7 +40,7 @@ const Hero = () => {
                     <motion.p variants={container(1)}
                         initial="hidden"
                         animate="visible"
-                        className="my-2 max-w-xl py-6 font-light tracking-tighter">
+                        className="my-2 w-full py-6 font-light md:text-xl tracking-tighter">
                         {HERO_CONTENT}
                     </motion.p>
                 </div>

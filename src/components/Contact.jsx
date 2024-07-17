@@ -14,9 +14,9 @@ const Contact = () => {
         initial={{opacity:0, y:-100}}
         transition={{duration:0.5}}
         className="text-center tracking-tighter">
-            <p className="my-4">{CONTACT.address}</p>
+            <p onClick={ () => window.open("https://outlook.live.com/mail/0/deeplink/compose?mailtouri=mailto%3Atisha98gaur%40gmail.com")}className="mouse cursor-pointer my-4">{CONTACT.address}</p>
             <p className="my-4">{CONTACT.phoneNo}</p>
-            <a href="#" className="border-b">{CONTACT.email}</a>
+            
         </motion.div>
     </div>
   )
