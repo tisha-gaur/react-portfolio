@@ -29,10 +29,11 @@ const Hero = () => {
                         animate="visible"
                         className="pb-10 bg-gradient-to-r from-pink-300 via-slate-200 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">Full Stack Developer</motion.span>
                     <a href="resumelink" className="w-1/2">
-                      <motion.button initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }}
-                        type="button" className="text-black font-bold w-5/6 bg-gradient-to-r from-pink-300 via-slate-00 to-purple-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800  rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-                        Resume
-                      </motion.button>
+                        <motion.button initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }}
+                            type="button" className="text-black font-bold w-5/6 bg-gradient-to-r from-pink-300 via-slate-00 to-purple-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800  rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                            onClick={() => window.open("https://drive.google.com/file/d/1oomMqjNo-Y6C2SALQyujGnytTjBZvTgz/view?usp=drivesdk")}>
+                            Resume
+                        </motion.button>
                     </a>
 
                     <motion.p variants={container(1)}
