@@ -1,7 +1,5 @@
 import { HERO_CONTENT } from "../constants/index.js";
-// import profilePic from "../assets/tishaProfile.png";
 import { motion } from "framer-motion"
-// import cloud from "../assets/smoke.mp4"
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
     visible: {
