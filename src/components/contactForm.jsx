@@ -17,7 +17,7 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://portback-13wy.onrender.com/api/contact', {
+            const response = await fetch('https://backside-n1n3.onrender.com/api/contact', {
                 method: 'POST', 
                 headers: {
                     'Content-Type': 'application/json'
