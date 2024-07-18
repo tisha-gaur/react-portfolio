@@ -43,20 +43,23 @@ export const PROJECTS = [
   {
     title: "Portfolio Website",
     image: project3,
+    link : "https://uifry-tishagaur.vercel.app/",
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Talwind CSS"],
+      "",
+    technologies: ["Node JS", "React JS", "Talwind CSS"],
   },
   {
-    title: "Uifry E-commerce",
+    title: "Uifry",
     image: project1,
+    link : "https://uifry-tishagaur.vercel.app/",
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+      "Developed a fully responsive and interactive website from figma design with multiple design effects using tailwind css for a company.",
     technologies: ["HTML", "Tailwind", "React", "Figma"],
   },
   {
     title: "Life-Lived-Till-Date",
     image: project2,
+    link : "https://uifry-tishagaur.vercel.app/",
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -65,6 +68,7 @@ export const PROJECTS = [
   {
     title: "Single Page Startup Website",
     image: project4,
+    link : "https://uifry-tishagaur.vercel.app/",
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "Bootstrap"],
