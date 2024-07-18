@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../constants/index.js";
 // import profilePic from "../assets/tishaProfile.png";
 import { motion } from "framer-motion"
-
+// import cloud from "../assets/smoke.mp4"
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
     visible: {
@@ -12,7 +12,7 @@ const container = (delay) => ({
 })
 
 const Hero = () => {
-    return <div className="pb-4 lg:mb-35">
+    return <div className="pb-4 lg:mb-35" >
         <div className="flex flex-wrap ">
             <div className="w-full p-4 md:pl-20 lg:w-1/2">
                 <div className="flex flex-col itema-center lg:items-start">
