@@ -43,9 +43,9 @@ export const PROJECTS = [
   {
     title: "Portfolio Website",
     image: project3,
-    link : "https://uifry-tishagaur.vercel.app/",
+    link : "https://tishagaur.vercel.app/",
     description:
-      "",
+      "Created a dynamic and interactive portfolio website using React and Tailwind CSS. The site showcases a comprehensive set of my projects and internships, highlighted with engaging animations to enhance user experience. It features a Contact Me form that seamlessly integrates with a Node.js backend, enabling visitors to send messages directly to my email. This project demonstrates my skills in front-end development, my ability to create responsive and visually appealing interfaces, and my proficiency in backend integration.",
     technologies: ["Node JS", "React JS", "Talwind CSS"],
   },
   {
@@ -59,18 +59,18 @@ export const PROJECTS = [
   {
     title: "Life-Lived-Till-Date",
     image: project2,
-    link : "https://uifry-tishagaur.vercel.app/",
+    link : "https://tisha-gaur.github.io/Life-Lived-Till-Date/",
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+      "This project provides a unique way to visualize the total time one has spent on Earth by displaying the duration in years, months, days, hours, minutes, and seconds. The interactive interface offers a real-time update of the elapsed time, making it both informative and engaging",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   
   {
-    title: "Single Page Startup Website",
+    title: "Move With Us",
     image: project4,
-    link : "https://uifry-tishagaur.vercel.app/",
+    link : "https://tisha-gaur.github.io/startup/?#",
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+      "I developed a professional and responsive website for a startup using Bootstrap, HTML, and CSS. The site features intuitive navigation, mobile-friendly design, and well-structured content to effectively showcase the startup's services and products.",
     technologies: ["HTML", "CSS", "Bootstrap"],
   },
 ];
