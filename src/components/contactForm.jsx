@@ -16,19 +16,25 @@ const ContactForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('https://portback-13wy.onrender.com/api/contact', {
-            method: 'POST', 
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            // credentials: 'include',
-            body: JSON.stringify(formData)
-          });
-        if (response.ok) {
-            alert('Message sent successfully!');
-            setFormData({ name: '', email: '', subject: '', message: '' });
-        } else {
-            alert('Failed to send message.');
+        try {
+            const response = await fetch('https://portback-13wy.onrender.com/api/contact', {
+                method: 'POST', 
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+            if (response.ok) {
+                alert('Message sent successfully!');
+                setFormData({ name: '', email: '', subject: '', message: '' });
+            } else {
+                const errorText = await response.text();
+                console.error('Server response:', errorText);
+                alert(`Failed to send message. Status: ${response.status}`);
+            }
+        } catch (error) {
+            console.error('Fetch error:', error);
+            alert(`An error occurred: ${error.message}`);
         }
     };
 
