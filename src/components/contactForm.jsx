@@ -17,12 +17,13 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const response = await fetch('https://portfolio-backend-rho-rust.vercel.app/api/contact', {
-            method: 'POST',
+            method: 'POST', 
             headers: {
-                'Content-Type': 'application/json'
+              'Content-Type': 'application/json'
             },
+            credentials: 'include',
             body: JSON.stringify(formData)
-        });
+          });
         if (response.ok) {
             alert('Message sent successfully!');
             setFormData({ name: '', email: '', subject: '', message: '' });
